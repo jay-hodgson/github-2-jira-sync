@@ -7,7 +7,7 @@ This script automatically syncs Dependabot security alerts from GitHub to Jira t
 ### 1. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### 2. Set Environment Variables
@@ -37,7 +37,7 @@ export JIRA_BASE_URL="https://sagebionetworks.jira.com"  # Optional, defaults to
 ### 3. Run the Script
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ## Command Line Options
@@ -48,13 +48,13 @@ python main.py
 **Examples:**
 ```bash
 # Test with dry run mode
-python main.py --dry-run
+python3 main.py --dry-run
 
 # Test with just 1 alert
-python main.py --limit=1
+python3 main.py --limit=1
 
 # Combine options
-python main.py --dry-run --limit=5
+python3 main.py --dry-run --limit=5
 ```
 
 ## What It Does
